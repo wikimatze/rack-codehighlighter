@@ -1,5 +1,12 @@
 RackCodehighlighter::App.controllers :page do
-  
+  get '/json' do
+    render 'json'
+  end
+
+
+
+
+
   # get :index, :map => '/foo/bar' do
   #   session[:foo] = 'bar'
   #   render 'index'
@@ -18,6 +25,6 @@ RackCodehighlighter::App.controllers :page do
   # get '/example' do
   #   'Hello world!'
   # end
-  
+
 
 end
