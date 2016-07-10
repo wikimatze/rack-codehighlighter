@@ -2,9 +2,26 @@
 <html lang="en-US">
   <head>
     <title>Job Vacancy - find the best jobs</title>
-    <link rel="stylesheet" href="https://gist.githubusercontent.com/andrewpthorp/5134070/raw/d03c1ff2259f5829fc29c76dd466a0b38c890368/coderay.css"/>
-  </head>
-  <body>
-    <%= yield %>
-  </body>
-</html>
+    <%= stylesheet_link_tag 'bootstrap' %>
+    <%= stylesheet_link_tag 'coderay.css' %>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="span12 offset3">
+        <h1>Coderay Highlighter Examples</h1>
+        <ul>
+          <li><a href="/page/json">JSON Example</li>
+          <li><a href="/page/ruby">Ruby Example</li>
+          <li><a href="/page/javascript">JavaScript Example</li>
+          <li><a href="/page/html">HTML Example</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="span9 offset3 site">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
