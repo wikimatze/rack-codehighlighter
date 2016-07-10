@@ -22,7 +22,7 @@ gem 'sqlite3'
 gem 'sequel'
 
 gem 'rack-codehighlighter'
-gem 'coderay'
+gem 'pygments.rb'
 
 # Test requirements
 
