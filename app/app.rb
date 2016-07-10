@@ -2,6 +2,8 @@ module RackCodehighlighter
   class App < Padrino::Application
     register Padrino::Mailer
     register Padrino::Helpers
+    register CoderayCodehighlighter
+
     enable :sessions
 
     ##
@@ -48,6 +50,10 @@ module RackCodehighlighter
     #     disable :asset_stamp # no asset timestamping for dev
     #   end
     #
+
+    get '/' do
+      render 'page/ruby'
+    end
 
     ##
     # You can manage errors like:
