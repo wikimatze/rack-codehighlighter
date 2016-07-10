@@ -3,6 +3,17 @@ RackCodehighlighter::App.controllers :page do
     render 'json'
   end
 
+  get '/ruby' do
+    render 'ruby'
+  end
+
+  get '/javascript' do
+    render 'javascript'
+  end
+
+  get '/html' do
+    render 'html'
+  end
 
 
 
