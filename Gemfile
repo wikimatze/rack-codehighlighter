@@ -21,6 +21,9 @@ gem 'erubis', '~> 2.7.0'
 gem 'sqlite3'
 gem 'sequel'
 
+gem 'rack-codehighlighter'
+gem 'coderay'
+
 # Test requirements
 
 # Padrino Stable Gem
